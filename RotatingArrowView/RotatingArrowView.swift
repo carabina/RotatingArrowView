@@ -18,14 +18,14 @@ public class RotatingArrowView: UIView
   // public private(set)
   public private(set) var isFacingDown = false
   
-  override init(frame: CGRect)
+  override public init(frame: CGRect)
   {
     super.init(frame: frame)
     
     startUp(frame:frame)
   }
   
-  required init?(coder aDecoder: NSCoder)
+  required public init?(coder aDecoder: NSCoder)
   {
     super.init(coder: aDecoder)
     
