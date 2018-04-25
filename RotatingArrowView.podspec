@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RotatingArrowView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Simple rotating arrow view'
  
   s.description      = <<-DESC
