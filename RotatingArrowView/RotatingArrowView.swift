@@ -73,12 +73,20 @@ extension RotatingArrowView
                    delay: 0.0,
                    options: .curveEaseIn,
                    animations: {
-                    self.triangle?.transform = self.isFacingDown ?
-                                               CGAffineTransform(rotationAngle: CGFloat(Double.pi)) :
-                                               CGAffineTransform(rotationAngle: CGFloat(-2 * Double.pi))
+                    self.isFacingDown ? self.setArrowUp(): self.setArrowDown()
                     self.isFacingDown = !self.isFacingDown
                    },
                    completion: nil)
+  }
+  
+  public func setArrowDown()
+  {
+    self.triangle?.transform = CGAffineTransform(rotationAngle: CGFloat(-2 * Double.pi))
+  }
+  
+  public func setArrowUp()
+  {
+    self.triangle?.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
   }
 }
 
