@@ -50,7 +50,7 @@ public class RotatingArrowView: UIView
     self.addSubview(triangle!)
     
     // set constraints
-    circle?.translatesAutoresizingMaskIntoConstraints   = false
+    circle?.translatesAutoresizingMaskIntoConstraints = false
     circle?.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
     circle?.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     circle?.widthAnchor.constraint(equalTo: self.widthAnchor).isActive     = true
