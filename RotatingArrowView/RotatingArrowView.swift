@@ -9,7 +9,7 @@
 import UIKit
 
 // initialization code
-class RotatingArrowView: UIView
+public class RotatingArrowView: UIView
 {
   // vars
   // internal
